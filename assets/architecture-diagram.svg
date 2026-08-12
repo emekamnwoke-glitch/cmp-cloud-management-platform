@@ -1,0 +1,70 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555" />
+    </marker>
+  </defs>
+
+  <rect width="900" height="620" fill="#ffffff" />
+
+  <text x="450" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a1a1a">
+    Cloud Management Platform — Architecture at a Glance
+  </text>
+
+  <!-- OpenShift Clusters -->
+  <rect x="150" y="55" width="600" height="60" rx="8" fill="#e8f0fe" stroke="#4a76d4" stroke-width="1.5"/>
+  <text x="450" y="80" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a3d7c">ON-PREMISES OPENSHIFT CLUSTERS</text>
+  <text x="450" y="100" text-anchor="middle" font-size="12" fill="#3a3a3a">Namespaces / Workloads / Pods / Services</text>
+
+  <line x1="450" y1="115" x2="450" y2="150" stroke="#555" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="465" y="135" font-size="11" fill="#555">Telemetry &amp; Metrics (API)</text>
+
+  <!-- Telemetry Integration Layer -->
+  <rect x="150" y="150" width="600" height="60" rx="8" fill="#fff4e0" stroke="#d99a2b" stroke-width="1.5"/>
+  <text x="450" y="175" text-anchor="middle" font-size="14" font-weight="bold" fill="#7c5a10">TELEMETRY INTEGRATION LAYER</text>
+  <text x="450" y="195" text-anchor="middle" font-size="12" fill="#3a3a3a">Ingestion · Normalisation · Enrichment</text>
+
+  <line x1="450" y1="210" x2="450" y2="235" stroke="#555" stroke-width="1.5"/>
+  <line x1="230" y1="235" x2="670" y2="235" stroke="#555" stroke-width="1.5"/>
+  <line x1="230" y1="235" x2="230" y2="255" stroke="#555" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="450" y1="235" x2="450" y2="255" stroke="#555" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="670" y1="235" x2="670" y2="255" stroke="#555" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Three engines -->
+  <rect x="130" y="255" width="200" height="60" rx="8" fill="#e6f6ec" stroke="#2f9e57" stroke-width="1.5"/>
+  <text x="230" y="290" text-anchor="middle" font-size="13" font-weight="bold" fill="#1c6b39">Cost Model Engine</text>
+
+  <rect x="350" y="255" width="200" height="60" rx="8" fill="#e6f6ec" stroke="#2f9e57" stroke-width="1.5"/>
+  <text x="450" y="290" text-anchor="middle" font-size="13" font-weight="bold" fill="#1c6b39">Governance Engine</text>
+
+  <rect x="570" y="255" width="200" height="60" rx="8" fill="#e6f6ec" stroke="#2f9e57" stroke-width="1.5"/>
+  <text x="670" y="282" text-anchor="middle" font-size="13" font-weight="bold" fill="#1c6b39">Reporting &amp;</text>
+  <text x="670" y="298" text-anchor="middle" font-size="13" font-weight="bold" fill="#1c6b39">Showback Engine</text>
+
+  <line x1="230" y1="315" x2="230" y2="335" stroke="#555" stroke-width="1.5"/>
+  <line x1="450" y1="315" x2="450" y2="335" stroke="#555" stroke-width="1.5"/>
+  <line x1="670" y1="315" x2="670" y2="335" stroke="#555" stroke-width="1.5"/>
+  <line x1="230" y1="335" x2="670" y2="335" stroke="#555" stroke-width="1.5"/>
+  <line x1="450" y1="335" x2="450" y2="360" stroke="#555" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- CMP Portal -->
+  <rect x="150" y="360" width="600" height="75" rx="8" fill="#f3e8fd" stroke="#8a4fd4" stroke-width="1.5"/>
+  <text x="450" y="388" text-anchor="middle" font-size="14" font-weight="bold" fill="#5a2c99">CMP PORTAL (RBAC)</text>
+  <text x="450" y="410" text-anchor="middle" font-size="12" fill="#3a3a3a">EA Dashboard · Finance · Infrastructure · App View</text>
+
+  <!-- Legend / footer -->
+  <text x="450" y="470" text-anchor="middle" font-size="11" fill="#777">
+    Portfolio representation · OrikiTech Consultancy × Aztec Bank Nigeria · Client and partner names anonymised
+  </text>
+
+  <rect x="150" y="500" width="600" height="90" rx="8" fill="#fafafa" stroke="#ccc" stroke-width="1"/>
+  <text x="170" y="522" font-size="12" font-weight="bold" fill="#333">Legend</text>
+  <rect x="170" y="532" width="14" height="14" fill="#e8f0fe" stroke="#4a76d4"/>
+  <text x="192" y="543" font-size="11" fill="#333">Source / Cluster layer</text>
+  <rect x="170" y="552" width="14" height="14" fill="#fff4e0" stroke="#d99a2b"/>
+  <text x="192" y="563" font-size="11" fill="#333">Integration layer</text>
+  <rect x="420" y="532" width="14" height="14" fill="#e6f6ec" stroke="#2f9e57"/>
+  <text x="442" y="543" font-size="11" fill="#333">Processing engines</text>
+  <rect x="420" y="552" width="14" height="14" fill="#f3e8fd" stroke="#8a4fd4"/>
+  <text x="442" y="563" font-size="11" fill="#333">Presentation / RBAC layer</text>
+</svg>

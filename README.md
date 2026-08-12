@@ -258,7 +258,7 @@ Role-based access control was built into the CMP portal from the outset rather t
 ## 📁 Repository Structure
 
 ```
-📦 cmp-aztec-bank
+📦 cmp-cloud-management-platform
  ┣ 📄 README.md                  ← You are here
  ┣ 📁 docs/
  ┃  ┣ 📄 architecture.md         ← TOGAF ADM architecture document
@@ -267,8 +267,10 @@ Role-based access control was built into the CMP portal from the outset rather t
  ┣ 📁 reports/
  ┃  ┗ 📄 phase-one-closeout.md   ← Phase One closeout summary
  ┗ 📁 assets/
-    ┗ 📄 architecture-diagram.png
+    ┗ 📄 architecture-diagram.svg
 ```
+
+**Explore further:** [Architecture Document](docs/architecture.md) · [Phase One Plan](docs/phase-one-plan.md) · [Phase Two Plan](docs/phase-two-plan.md) · [Phase One Close-Out Report](reports/phase-one-closeout.md)
 
 ---
 
