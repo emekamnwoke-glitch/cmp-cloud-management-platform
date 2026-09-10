@@ -295,17 +295,17 @@ Revisit if the bank's infrastructure strategy introduces hybrid/multi-cloud work
 
 ## ADR-005: Invest in Automation Infrastructure During Phase One to Compress Phase Two
 
-**Date:** December 2025
+**Date:** November 2025
 **Status:** Accepted — closed
 **Deciders:** Product Owner, Infrastructure Team
 
 ### Context
 
-**Current State:** Phase Two's plan already called for four infrastructure automation workflow extractions and implementations, on top of HA migration and expanded OpenShift integration — a heavier scope than Phase One's, on a similar or shorter timeline.
+**Current State:** Even at Phase One kickoff, it was clear that Phase Two's control and automation objectives would need a working automation foundation — HA migration and expanded OpenShift integration alone would already load Phase Two's timeline.
 
-**The Problem:** Building the automation backend from scratch at the start of Phase Two would delay Phase Two's other, more time-boxed HA and integration work.
+**The Problem:** Building an automation backend from scratch at the start of Phase Two would delay Phase Two's other, more time-boxed HA and integration work.
 
-**Why Now:** Phase One had spare capacity in its December 2025 milestones, after core showback delivery, that could be invested ahead of Phase Two's heavier automation demand.
+**Why Now:** This was decided as part of Phase One's initial scope, agreed at the 5 November 2025 kickoff workshop, rather than left as a Phase Two problem — the Phase One milestone tracker was built from the start to include automation backend setup and an initial workflow, not just core showback delivery.
 
 **Impact:** Phase Two starts with a working automation backend and one validated workflow already in place, rather than building that foundation from zero under Phase Two's own timeline pressure.
 
