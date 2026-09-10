@@ -95,6 +95,8 @@ C4Container
     Rel(appowner, portal, "Views ownership mapping")
 ```
 
+*Diagramming approach documented in [ADR-001](architecture-decisions.md#adr-001-use-mermaid-c4-diagrams-for-architecture-documentation).*
+
 **Component responsibilities:**
 
 | Component | Responsibility |
