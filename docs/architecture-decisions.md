@@ -7,7 +7,7 @@ This file holds formal decision records for architecture and documentation decis
 ## ADR-001: Use Mermaid C4 Diagrams for Architecture Documentation
 
 **Date:** September 2026
-**Status:** Accepted — pending final render verification (see Next Steps)
+**Status:** Accepted — render verified
 **Deciders:** Product Owner, EA Team
 
 ### Context
@@ -54,7 +54,7 @@ The diagram itself models the CMP container architecture already described in `d
 
 **Phase 1 — Replace the diagram.** *(Done)* §4.2's ASCII art replaced with the `C4Container` Mermaid block.
 
-**Phase 2 — Verify rendering.** *(In progress)* Indirect evidence is positive — GitHub created a ~2176px-tall render iframe for the block with no visible error text on the page — but pixel-level visual confirmation is still pending a direct screenshot.
+**Phase 2 — Verify rendering.** *(Done)* Confirmed by screenshot on github.com — the diagram renders correctly, with all 4 person actors, both system boundaries, and all 5 containers laid out and labelled as designed.
 
 **Phase 3 — Resolve the orphaned SVG.** *(Not started)* Decide whether `assets/architecture-diagram.svg` is deleted as fully superseded, or kept and explicitly embedded as a supplementary downloadable/print-quality image.
 
@@ -62,21 +62,19 @@ The diagram itself models the CMP container architecture already described in `d
 
 | Risk | Mitigation | Owner | Likelihood | Impact |
 |---|---|---|---|---|
-| GitHub's pinned Mermaid version doesn't support the C4 diagram type and silently fails to render | Visual confirmation pending (Phase 2); if it fails, fall back to a standard `graph TB` flowchart — a diagram type already proven working in the companion `unified-service-platform` repo | Product Owner | Low–Medium | Medium |
+| GitHub's pinned Mermaid version doesn't support the C4 diagram type and silently fails to render | **Resolved** — confirmed by screenshot; renders correctly | Product Owner | ~~Low–Medium~~ | ~~Medium~~ |
 | A reader viewing this file outside github.com (local editor, different git host) sees raw Mermaid syntax instead of a diagram | Accepted — GitHub is the only currently-known consumption path for this portfolio | Product Owner | Medium | Low |
 | The orphaned SVG stays in the repo indefinitely, causing confusion about which diagram is authoritative | Tracked explicitly as Phase 3 / Next Steps rather than left silent | Product Owner | Low | Low |
 
 ### Success Criteria
 
-- The Mermaid diagram renders as an actual visual on github.com, not raw code text (pending final confirmation)
+- The Mermaid diagram renders as an actual visual on github.com, not raw code text — ✅ met
 - No unreferenced diagram assets remain undocumented in the repository once Phase 3 resolves
 - `docs/architecture.md` §4.2 uses a named, recognized architecture notation rather than ad hoc ASCII art
 
 ### Next Steps
 
-- Confirm visually that the C4 diagram renders correctly on GitHub (screenshot the live page)
 - Decide and execute the disposition of `assets/architecture-diagram.svg`
-- If C4 syntax proves unsupported on GitHub, replace it with a `graph TB` Mermaid flowchart instead
 
 ### Approvals & Sign-Off
 
