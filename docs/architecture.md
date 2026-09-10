@@ -58,30 +58,41 @@ This document describes the target architecture for the Cloud Management Platfor
 
 ### 4.2 Application Architecture
 
-```
-┌──────────────────────────────────────────────────────┐
-│            ON-PREMISES OPENSHIFT CLUSTERS             │
-│        (Namespaces / Workloads / Pods / Services)      │
-└──────────────────────┬───────────────────────────────┘
-                        │  Telemetry & Metrics (API)
-                        ▼
-┌──────────────────────────────────────────────────────┐
-│             TELEMETRY INTEGRATION LAYER                │
-│       (Ingestion · Normalisation · Enrichment)          │
-└──────────────────────┬───────────────────────────────┘
-                        │
-           ┌────────────┼────────────┐
-           ▼            ▼            ▼
-    ┌────────────┐ ┌──────────┐ ┌──────────────┐
-    │ Cost Model │ │Governance│ │  Reporting & │
-    │   Engine   │ │  Engine  │ │ Showback Eng.│
-    └─────┬──────┘ └────┬─────┘ └──────┬───────┘
-          └─────────────┼──────────────┘
-                        ▼
-┌──────────────────────────────────────────────────────┐
-│                  CMP PORTAL (RBAC)                     │
-│  EA Dashboard · Finance · Infrastructure · App View     │
-└──────────────────────────────────────────────────────┘
+```mermaid
+C4Container
+    title Container Diagram — Cloud Management Platform (CMP)
+
+    Person(finance, "Finance Team", "Reviews cost allocation and showback reports")
+    Person(infra, "Infrastructure Team", "Monitors workload performance and HA")
+    Person(ea, "EA Team", "Reviews architecture conformance")
+    Person(appowner, "Application Owners", "Reviews ownership mapping and showback fairness")
+
+    System_Boundary(openshift, "On-Premises OpenShift Estate") {
+        Container(clusters, "OpenShift Clusters", "Namespaces / Workloads / Pods / Services", "Source of telemetry and resource metrics")
+    }
+
+    Container(telemetry, "Telemetry Integration Layer", "Ingestion Service", "Ingests, normalises, and enriches OpenShift telemetry")
+
+    System_Boundary(engines, "CMP Core Engines") {
+        Container(costEngine, "Cost Model Engine", "Service", "Applies allocation rules to produce showback/chargeback figures")
+        Container(govEngine, "Governance Engine", "Service", "Evaluates workloads against compliance and policy rules")
+        Container(reportEngine, "Reporting & Showback Engine", "Service", "Aggregates cost and governance output into BI views")
+    }
+
+    Container(portal, "CMP Portal", "Web Application, RBAC", "Role-scoped presentation layer")
+
+    Rel(clusters, telemetry, "Sends telemetry & metrics", "API")
+    Rel(telemetry, costEngine, "Normalised telemetry")
+    Rel(telemetry, govEngine, "Normalised telemetry")
+    Rel(telemetry, reportEngine, "Normalised telemetry")
+    Rel(costEngine, portal, "Cost data")
+    Rel(govEngine, portal, "Compliance data & audit trail")
+    Rel(reportEngine, portal, "BI reporting views")
+
+    Rel(finance, portal, "Views showback/chargeback")
+    Rel(infra, portal, "Views workload performance")
+    Rel(ea, portal, "Views architecture conformance")
+    Rel(appowner, portal, "Views ownership mapping")
 ```
 
 **Component responsibilities:**
