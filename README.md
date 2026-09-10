@@ -218,16 +218,16 @@ Overall Phase Two       ░░░░░░░░░░░░░░░░░░�
 ## 🔑 Key Product Decisions & Learnings
 
 ### ✅ Pilot-First Deployment Strategy
-A phased rollout was adopted over a big-bang deployment. Phase One targeted chargeback and insight reporting for selected workloads only, allowing the cost model to be validated before full production commitment. This reduced adoption resistance and created an evidence base for Phase Two investment sign-off.
+A phased rollout was adopted over a big-bang deployment. Phase One targeted chargeback and insight reporting for selected workloads only, allowing the cost model to be validated before full production commitment. This reduced adoption resistance and created an evidence base for Phase Two investment sign-off. *Full decision record: [ADR-001](docs/architecture-decisions.md#adr-001-adopt-a-pilot-first-phased-deployment-strategy).*
 
 ### ✅ Showback Before Chargeback
-Teams were introduced to cost visibility through showback reporting (read-only, no financial consequence) before full chargeback was activated. This was a deliberate product decision to build trust and literacy before accountability.
+Teams were introduced to cost visibility through showback reporting (read-only, no financial consequence) before full chargeback was activated. This was a deliberate product decision to build trust and literacy before accountability. *Full decision record: [ADR-002](docs/architecture-decisions.md#adr-002-sequence-showback-before-chargeback).*
 
 ### ✅ Automation as a Force Multiplier
-A significant portion of Phase One effort was invested in infrastructure automation workflows and IT automation backend setup. This upfront investment was designed to compress Phase Two delivery timelines by eliminating manual repetition across the 4× automation workflow extractions planned.
+A significant portion of Phase One effort was invested in infrastructure automation workflows and IT automation backend setup. This upfront investment was designed to compress Phase Two delivery timelines by eliminating manual repetition across the 4× automation workflow extractions planned. *Full decision record: [ADR-005](docs/architecture-decisions.md#adr-005-invest-in-automation-infrastructure-during-phase-one-to-compress-phase-two).*
 
 ### ✅ RBAC as a Day-One Requirement
-Role-based access control was built into the CMP portal from the outset rather than retrofitted. This enabled different stakeholder groups (Finance, Infrastructure, EA, Application Support) to access only the dashboards and data relevant to them — a critical governance requirement for a regulated banking environment.
+Role-based access control was built into the CMP portal from the outset rather than retrofitted. This enabled different stakeholder groups (Finance, Infrastructure, EA, Application Support) to access only the dashboards and data relevant to them — a critical governance requirement for a regulated banking environment. *Full decision record: [ADR-003](docs/architecture-decisions.md#adr-003-build-rbac-into-the-cmp-portal-from-day-one).*
 
 ---
 
@@ -265,7 +265,7 @@ Role-based access control was built into the CMP portal from the outset rather t
  ┣ 📄 README.md                       ← You are here
  ┣ 📁 docs/
  ┃  ┣ 📄 architecture.md              ← TOGAF ADM architecture document
- ┃  ┣ 📄 architecture-decisions.md    ← ADRs for architecture & documentation decisions
+ ┃  ┣ 📄 architecture-decisions.md    ← ADRs behind Phase One (ADR-001 to ADR-005)
  ┃  ┣ 📄 phase-one-plan.md            ← Phase One detailed plan
  ┃  ┗ 📄 phase-two-plan.md            ← Phase Two detailed plan
  ┗ 📁 reports/

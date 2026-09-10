@@ -19,11 +19,11 @@ This document describes the target architecture for the Cloud Management Platfor
 **Vision statement.**
 > *"Enable teams to see, understand, and optimise their workloads — improving cost transparency, operational efficiency, and governance adherence — through a governed, insight-led Cloud Management Platform."*
 
-**Architecture principles applied:**
-- **Insight before enforcement** — showback precedes chargeback; visibility precedes control.
-- **Phased value delivery** — each phase must deliver measurable value before the next is unlocked.
-- **Governance by design** — RBAC and audit are day-one requirements, not retrofits.
-- **On-premises first** — Phase 1–2 scope is strictly on-premises OpenShift; hybrid/multi-cloud is explicitly deferred.
+**Architecture principles applied** (full decision record for each in [architecture-decisions.md](architecture-decisions.md)):
+- **Insight before enforcement** — showback precedes chargeback; visibility precedes control. ([ADR-002](architecture-decisions.md#adr-002-sequence-showback-before-chargeback))
+- **Phased value delivery** — each phase must deliver measurable value before the next is unlocked. ([ADR-001](architecture-decisions.md#adr-001-adopt-a-pilot-first-phased-deployment-strategy))
+- **Governance by design** — RBAC and audit are day-one requirements, not retrofits. ([ADR-003](architecture-decisions.md#adr-003-build-rbac-into-the-cmp-portal-from-day-one))
+- **On-premises first** — Phase 1–2 scope is strictly on-premises OpenShift; hybrid/multi-cloud is explicitly deferred. ([ADR-004](architecture-decisions.md#adr-004-scope-phase-one-and-two-to-on-premises-openshift-only))
 
 ---
 
@@ -95,8 +95,6 @@ C4Container
     Rel(appowner, portal, "Views ownership mapping")
 ```
 
-*Diagramming approach documented in [ADR-001](architecture-decisions.md#adr-001-use-c4-diagrams-for-architecture-documentation).*
-
 **Component responsibilities:**
 
 | Component | Responsibility |
@@ -142,7 +140,7 @@ Deferred to the future roadmap (out of current scope): hybrid/multi-cloud suppor
 
 ## 7. Architecture Governance
 
-Architecture conformance was reviewed at each phase gate by the EA Team and signed off by the Group CIO before the next phase was unlocked. Key governance decisions are recorded in [README.md](../README.md#-key-product-decisions--learnings), under **Key Product Decisions & Learnings** — including the pilot-first deployment strategy, the showback-before-chargeback sequencing, and the day-one RBAC requirement.
+Architecture conformance was reviewed at each phase gate by the EA Team and signed off by the Group CIO before the next phase was unlocked. Key governance decisions are summarized in [README.md](../README.md#-key-product-decisions--learnings), under **Key Product Decisions & Learnings**, with the full decision record for each — context, alternatives considered, risk register, and sign-off — in [architecture-decisions.md](architecture-decisions.md) (ADR-001 through ADR-005).
 
 ---
 
