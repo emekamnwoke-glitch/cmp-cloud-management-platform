@@ -17,6 +17,8 @@
 | **Version** | v1.0 |
 | **Date** | November 2025 |
 
+> **Snapshot note:** This portfolio reflects the programme's status as of Phase One close-out (15 December 2025), with Phase Two authorised to commence but not yet started at that point. Dates and percentages below are fixed to that snapshot — they are not a live tracker.
+
 ---
 
 ## 🎯 Product Vision
@@ -287,6 +289,6 @@ Responsible for end-to-end product ownership of the CMP programme: defining the 
 ---
 
 ![Phase One](https://img.shields.io/badge/Phase%20One-Complete-brightgreen)
-![Phase Two](https://img.shields.io/badge/Phase%20Two-In%20Progress-blue)
+![Phase Two](https://img.shields.io/badge/Phase%20Two-Planned-lightgrey)
 ![Stack](https://img.shields.io/badge/Stack-OpenShift%20%7C%20CMP%20%7C%20BI-orange)
 ![Role](https://img.shields.io/badge/Role-Product%20Owner-purple)

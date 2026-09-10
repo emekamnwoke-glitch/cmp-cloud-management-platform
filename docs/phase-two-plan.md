@@ -1,7 +1,7 @@
 # Phase Two Plan — Control & High Availability
 
 > **Portfolio Project** · OrikiTech Consultancy × Aztec Bank Nigeria
-> **Rollout Target:** 20 January 2026 · **Status:** 🔄 In Planning (0% complete)
+> **Rollout Target:** 20 January 2026 · **Status (as of Phase One close-out, 15 Dec 2025):** 🔄 In Planning (0% complete)
 
 ---
 
