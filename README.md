@@ -15,9 +15,10 @@
 | **Project Manager** | Project Manager, Aztec Bank Nigeria (Internal) |
 | **Architecture Sponsor** | Group CIO, Aztec Bank Nigeria |
 | **Version** | v1.0 |
-| **Date** | November 2025 |
+| **Engagement Start Date** | November 2025 |
+| **Document Snapshot Date** | 15 December 2025 (Phase One close-out) |
 
-> **Snapshot note:** This portfolio reflects the programme's status as of Phase One close-out (15 December 2025), with Phase Two authorised to commence but not yet started at that point. Dates and percentages below are fixed to that snapshot — they are not a live tracker.
+> **Snapshot note:** Phase Two was authorised to commence but not yet started as of the snapshot date above. Dates and percentages below are fixed to that snapshot — they are not a live tracker.
 
 ---
 
