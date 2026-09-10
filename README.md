@@ -268,10 +268,8 @@ Role-based access control was built into the CMP portal from the outset rather t
  ┃  ┣ 📄 architecture-decisions.md    ← ADRs for architecture & documentation decisions
  ┃  ┣ 📄 phase-one-plan.md            ← Phase One detailed plan
  ┃  ┗ 📄 phase-two-plan.md            ← Phase Two detailed plan
- ┣ 📁 reports/
- ┃  ┗ 📄 phase-one-closeout.md        ← Phase One closeout summary
- ┗ 📁 assets/
-    ┗ 📄 architecture-diagram.svg
+ ┗ 📁 reports/
+    ┗ 📄 phase-one-closeout.md        ← Phase One closeout summary
 ```
 
 **Explore further:** [Architecture Document](docs/architecture.md) · [Architecture Decision Records](docs/architecture-decisions.md) · [Phase One Plan](docs/phase-one-plan.md) · [Phase Two Plan](docs/phase-two-plan.md) · [Phase One Close-Out Report](reports/phase-one-closeout.md)
