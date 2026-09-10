@@ -129,7 +129,7 @@ Deferred to the future roadmap (out of current scope): hybrid/multi-cloud suppor
 
 ## 7. Architecture Governance
 
-Architecture conformance was reviewed at each phase gate by the EA Team and signed off by the Group CIO before the next phase was unlocked. Key governance decisions are recorded in the [README's Key Product Decisions & Learnings](../README.md#-key-product-decisions--learnings) section, including the pilot-first deployment strategy, the showback-before-chargeback sequencing, and the day-one RBAC requirement.
+Architecture conformance was reviewed at each phase gate by the EA Team and signed off by the Group CIO before the next phase was unlocked. Key governance decisions are recorded in [README.md](../README.md#-key-product-decisions--learnings), under **Key Product Decisions & Learnings** — including the pilot-first deployment strategy, the showback-before-chargeback sequencing, and the day-one RBAC requirement.
 
 ---
 

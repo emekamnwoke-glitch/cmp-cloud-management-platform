@@ -67,7 +67,7 @@ Phase Two builds directly on the exit criteria met at [Phase One close-out](../r
 
 ## 5. Risks Active in Phase Two
 
-Per the [README Risk Register](../README.md#%EF%B8%8F-risk-register), Phase Two carries elevated exposure to **R3** (operational overload during rollout — mitigated via phased delivery and a dedicated support window per milestone) and **R4** (OpenShift integration complexity — mitigated via the architecture review and sign-off gate carried over from Phase One).
+Per the Risk Register in [README.md](../README.md#%EF%B8%8F-risk-register), Phase Two carries elevated exposure to **R3** (operational overload during rollout — mitigated via phased delivery and a dedicated support window per milestone) and **R4** (OpenShift integration complexity — mitigated via the architecture review and sign-off gate carried over from Phase One).
 
 ---
 

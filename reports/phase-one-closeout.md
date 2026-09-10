@@ -32,7 +32,7 @@ Full milestone-by-milestone detail is tracked in [docs/phase-one-plan.md](../doc
 
 - **Telemetry & Cost Modelling:** Infrastructure VM provisioned, CMP services installed, and real-time monitoring configured for the initial critical-application scope.
 - **Ownership Mapping:** Business units validated and applications mapped to owners across the in-scope estate — performed manually, with dynamic mapping deferred to Phase Two.
-- **Showback Reporting:** Chargeback BI reporting installed and cost allocation configured; showback (not chargeback) was activated, consistent with the deliberate [Showback Before Chargeback](../README.md#-showback-before-chargeback) product decision.
+- **Showback Reporting:** Chargeback BI reporting installed and cost allocation configured; showback (not chargeback) was activated, consistent with the deliberate Showback Before Chargeback product decision (see [README.md](../README.md#-showback-before-chargeback), under Key Product Decisions & Learnings).
 - **Automation Foundations:** IT automation process backend stood up, with initial workflow extraction and implementation completed and validated through infrastructure test iterations — designed to compress Phase Two's four-workflow rollout.
 - **Governance:** RBAC-scoped CMP Portal delivered as a day-one requirement, giving Finance, Infrastructure, EA, and Application stakeholders separated views.
 - **Stakeholder Enablement:** CMP walkthrough, team validations, and reporting presentation delivered ahead of close-out.
@@ -53,7 +53,7 @@ Full milestone-by-milestone detail is tracked in [docs/phase-one-plan.md](../doc
 
 ## 5. Risks Retired or Carried Forward
 
-Per the [README Risk Register](../README.md#%EF%B8%8F-risk-register):
+Per the Risk Register in [README.md](../README.md#%EF%B8%8F-risk-register):
 
 - **R1 (Stakeholder adoption resistance):** Substantially mitigated through the insight-first showback approach and early stakeholder engagement; no material adoption blockers reported at close-out.
 - **R2 (Cost model inaccuracy):** Addressed via the structured validation phase with Finance and EA review gates; no material inaccuracies identified.

@@ -9,7 +9,7 @@
 
 Deliver cost visibility and showback reporting for a scoped set of critical on-premises OpenShift workloads, validating the cost model and building stakeholder trust before chargeback accountability or Phase Two investment was committed.
 
-This phase deliberately excluded enforcement — see [Showback Before Chargeback](../README.md#-showback-before-chargeback) in the README's product decisions.
+This phase deliberately excluded enforcement — see [README.md](../README.md#-showback-before-chargeback), under **Key Product Decisions & Learnings → Showback Before Chargeback**.
 
 ---
 
@@ -69,7 +69,7 @@ Phase One was gated on the following, all achieved prior to close-out (see [phas
 
 ## 5. Risks Carried Into Phase One
 
-See the [README Risk Register](../README.md#%EF%B8%8F-risk-register) for the full register. Risks most active during Phase One: **R1** (stakeholder adoption resistance, mitigated via insight-first showback and early engagement) and **R5** (telemetry data quality, mitigated via validation as an explicit exit criterion).
+See the Risk Register in [README.md](../README.md#%EF%B8%8F-risk-register) for the full register. Risks most active during Phase One: **R1** (stakeholder adoption resistance, mitigated via insight-first showback and early engagement) and **R5** (telemetry data quality, mitigated via validation as an explicit exit criterion).
 
 ---
 
